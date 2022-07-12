@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="style.css">
+    <title>Code Quiz</title>
+</head>
+<body>
+    <header>
+    <a href="./scores.html">View Highscores</a>
+     <p class="timer-container" style="display:none">Time Left: <span id="timer-text">0</span></p>
+    </header>
+    <hr>
+<main>
+<p id="direction-text">Click Below To Start Quiz</p>
+<button type="button" id="start-quiz-btn">Start Quiz</button>
+<div id="quiz-container"></div>
+<div id="choice-container"></div>
+</main>
+<form id="submit-score-form" style="display: none;">
+<label for="name">Your Name</label>
+<input type="text" name="name" id="player-name-unput">
+<button type="submut" id="submit-score-btn">Submit</button>
+</form>
+
+<script src="questions.js"></script>
+<script src="logic.js"></script>
+</body>
+</html>
